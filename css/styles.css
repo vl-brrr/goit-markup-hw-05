@@ -215,7 +215,8 @@ img {
 }
 
 .footer-form {
-  display: inline-flex;
+  display: flex;
+  gap: 24px;
 }
 .footer-form-header {
   color: var(--white);
@@ -252,9 +253,9 @@ img {
 .footer-form-button {
   display: inline-flex;
   padding: 8px 24px;
-  gap: 16px;
   align-items: center;
-  margin-left: 24px;
+  justify-content: center;
+  min-width: 165px;
 
   color: var(--white);
   font-size: 16px;
@@ -267,6 +268,9 @@ img {
   border: none;
   cursor: pointer;
   transition: background-color var(--animation);
+}
+.footer-form-icon {
+  margin-left: 16px;
 }
 .footer-form-button:focus,
 .footer-form-button:hover {
@@ -560,8 +564,13 @@ img {
   display: block;
   text-align: center;
 }
-.modal-form-input-field {
+.modal-form-item {
   margin-bottom: 8px;
+}
+.user-comment-field {
+  margin-bottom: 16px;
+}
+.modal-form-input-field {
   position: relative;
 }
 .modal-form-label {
@@ -590,7 +599,6 @@ img {
 .modal-form-textarea {
   resize: none;
   height: 120px;
-  margin-bottom: 16px;
 }
 .modal-form-input:focus,
 .modal-form-textarea:focus {
@@ -616,6 +624,9 @@ img {
 .modal-form-policy {
   color: var(--light-slate);
   font-size: 12px;
+}
+.modal-form-policy-field {
+  margin-bottom: 24px;
 }
 .policy-checkbox {
   width: 16px;
@@ -648,8 +659,7 @@ input[type='checkbox']:checked + .policy-checkbox {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 24px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   padding: 16px 32px;
 
@@ -657,6 +667,7 @@ input[type='checkbox']:checked + .policy-checkbox {
   text-align: center;
   font-weight: 500;
   letter-spacing: 0.04em;
+  font-family: inherit;
 
   border: none;
   border-radius: 4px;
