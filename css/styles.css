@@ -603,6 +603,8 @@ img {
   resize: none;
   height: 120px;
   color: var(--navy-blue-modal);
+  line-height: 1.17;
+  letter-spacing: 0.04em;
 }
 .modal-form-input:focus,
 .modal-form-textarea:focus {
@@ -629,6 +631,8 @@ img {
   display: block;
   color: var(--light-slate);
   font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
 }
 .modal-form-policy-field {
   margin-bottom: 24px;
@@ -646,11 +650,11 @@ img {
   align-items: center;
   justify-content: center;
 
-  transition: border-color var(--animation), background-color var(--animation),
+  transition: background-color var(--animation), border var(--animation),
     fill var(--animation);
 }
 input[type='checkbox']:checked + .modal-form-policy > .policy-checkbox {
-  border-color: var(--ocean);
+  border: none;
   background-color: var(--ocean);
   fill: var(--cloud);
 }
